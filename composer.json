@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Control CSP via the admin area",
   "type": "magento2-module",
+  "license": [
+    "MIT"
+  ],
   "autoload": {
     "files": [
       "registration.php"
