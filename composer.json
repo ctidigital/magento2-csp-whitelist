@@ -1,0 +1,14 @@
+{
+  "name": "ctidigital/magento2-csp-whitelist",
+  "version": "1.0.0",
+  "description": "Control CSP via the admin area",
+  "type": "magento2-module",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "CtiDigital\\CspWhitelist\\": ""
+    }
+  }
+}

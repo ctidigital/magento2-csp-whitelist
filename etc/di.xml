@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Csp\Model\Collector\CspWhitelistXmlCollector">
+        <plugin name="ctidigital_csp_whitelist" type="CtiDigital\CspWhitelist\Plugin\CspWhitelist"/>
+    </type>
+
+    <type name="CtiDigital\CspWhitelist\Plugin\CspWhitelist">
+        <arguments>
+            <argument name="configReader" xsi:type="object">Magento\Csp\Model\Collector\CspWhitelistXml\Data</argument>
+        </arguments>
+    </type>
+</config>
